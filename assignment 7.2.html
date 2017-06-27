@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+      <head>
+            <title>Assignment 7.2</title>
+            
+            <style>
+                  /*to style the background color */
+                  body
+                       {
+                         background-color:blue;
+                        }
+            </style>
+            <script>
+                    /*onfocus to the Namefeild function*/
+                   function nameFunction()
+                   {
+                       document.getElementById("demo").innerHTML="Pleace input the User Name";
+                       document.getElementById("demo").style.color = "red";
+
+                    }
+                     /*onfocus to the Emailfeild function*/
+                    function emailFunction()
+                   {
+                       document.getElementById("demo1").innerHTML="Pleace input the User Email";                     
+                       document.getElementById("demo1").style.color = "red";
+
+                    }
+                     /*onfocus to the Agefeild function*/
+                   function ageFunction()
+                   {
+                       document.getElementById("demo2").innerHTML="Pleace input the  Age";
+                       document.getElementById("demo2").style.color = "red";
+
+                    }
+                      /*onfocus to the Cityfeild function*/
+                    function cityFunction()
+                   {
+                       document.getElementById("demo3").innerHTML="Pleace input the  City";
+                       document.getElementById("demo3").style.color = "red";
+
+                    }
+             </script>
+     </head>
+     <body>
+           <h2>Helpful notes will appear here</h2>
+          <form>
+          <label>Name:</label>
+           <input type="text"  id="name" onfocus="nameFunction()"></input><p id="demo"></p>
+
+           <label>Email:</label>
+           <input type="text"  id="email" onfocus="emailFunction()"></input><p id="demo1"></p>
+
+           <label>Age:</label>
+           <input type="text" id="age" onfocus="ageFunction()></input><p id="demo2"></p>
+
+           <label>City:</label>
+           <input type="text" id="city" onfocus="cityFunction()></input><p id="demo3"></p>
+           </form>
+           
+      </body>
+</html>
